@@ -1,0 +1,8 @@
+[project]
+name = "ai-radio-jockey"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-openai>=0.3.0",
+    "pydantic-settings>=2.0.0",
+]

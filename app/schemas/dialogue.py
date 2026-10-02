@@ -2,6 +2,7 @@ from pydantic import BaseModel, Field
 
 class DialogueLine(BaseModel):
     speaker: str = Field(description="Identifier of the configured voice/character")
+    emotion: str = Field(default="neutral", description="The emotional delivery or tone for this specific line (e.g., 'laughing', 'sarcastic', 'excited')")
     text: str = Field(description="The spoken text, free of stage directions or markdown")
 
 class Dialogue(BaseModel):

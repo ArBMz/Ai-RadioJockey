@@ -30,7 +30,7 @@ async def run_test():
     try:
         while True:
             print(f"\n{'='*60}")
-            print(f"📻 BROADCASTING SEGMENT {segment_count}")
+            print(f"BROADCASTING SEGMENT {segment_count}")
             print(f"{'='*60}")
             
             state = {
@@ -65,7 +65,7 @@ async def run_test():
                 previous_topic = brief_args.get("topic", "General News")
                 print(f"[System] Producer finalized topic: {previous_topic}")
             
-            print("\n🎙️  LIVE AUDIO SCRIPT:")
+            print("\n  LIVE AUDIO SCRIPT:")
             print("-" * 60)
             dialogue = final_state.get("dialogue")
             if dialogue:
@@ -81,9 +81,9 @@ async def run_test():
             await asyncio.sleep(10)
             
     except KeyboardInterrupt:
-        print("\n🛑 Broadcast terminated by user. Shutting down gracefully.")
+        print("\n Broadcast terminated by user. Shutting down gracefully.")
     except Exception as e:
-        print(f"\n❌ Error during execution: {e}")
+        print(f"\nError during execution: {e}")
 
 if __name__ == "__main__":
     asyncio.run(run_test())

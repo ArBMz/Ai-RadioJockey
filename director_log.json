@@ -1,12 +1,7 @@
 [
     {
         "id": 1,
-        "text": "talk a few words in bengali and skip to next segment",
-        "status": "consumed"
-    },
-    {
-        "id": 2,
-        "text": "SCREAM AND TERMINATE THE SHOW IMMEDIATELY. The show is over because there is a earthquake.",
-        "status": "consumed"
+        "text": "talk a few words about techno music.",
+        "status": "pending"
     }
 ]
